@@ -2,11 +2,12 @@
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
       <siteMapNode url="Default.aspx" title="Home"  description="Staring page of the application">
        
-        <siteMapNode url="Order.aspx" title="Products"  description="Page for selecting products" >
+        <siteMapNode url="" title="Shopping"  description="Page for selecting products" >
+          <siteMapNode url="Order.aspx" title="Products"  description="Page for selecting products" />
           <siteMapNode url="Cart.aspx" title="Cart"  description="Page for holding selected products" />
         </siteMapNode>
          
-        <siteMapNode url="Brands.aspx" title="Brands"  description="Page for displaying different brands" >
+        <siteMapNode url="" title="Brands"  description="Page for displaying different brands" >
           <siteMapNode url="Armani.aspx" title="Armani"  description="Page for displaying Armani watches" />
             <siteMapNode url="Casio.aspx" title="Casio"  description="Page for displaying Casio watches" />
               <siteMapNode url="Citizen.aspx" title="Citizen"  description="Page for displaying Citizen watches" />
@@ -14,16 +15,21 @@
           <siteMapNode url="Rolex.aspx" title="Rolex"  description="Page for displaying Rolex watches" />
         </siteMapNode>
 
-        <siteMapNode url="Catagory.aspx" title="Catagory"  description="Page for displaying different brands" >
-          <siteMapNode url="Male.aspx" title="Male"  description="Page for displaying Armani watches" />
-            <siteMapNode url="Female.aspx" title="Female"  description="Page for displaying Casio watches" />
-          <siteMapNode url="Sport.aspx" title="Sport"  description="Page for displaying Citizen watches" />
+        <siteMapNode url="" title="Catagory"  description="Page for displaying different Catagories of watches" >
+          <siteMapNode url="Male.aspx" title="Male"  description="Page for displaying Male only watches" />
+            <siteMapNode url="Female.aspx" title="Female"  description="Page for displaying Female only watches" />
+          <siteMapNode url="Sport.aspx" title="Sport"  description="Page for displaying Sports watches" />
         </siteMapNode>
 
-        <siteMapNode url="About.aspx" title="About"  description="Information about the appliocation" >
+        <siteMapNode url="" title="Contact"  description="Contact Information" >
+          <siteMapNode url="Contact.aspx" title="Contact Information"  description="Contact Information" />
+          <siteMapNode url="Suport.aspx" title="Customer Support FAQ"  description="Contact Information" />
         </siteMapNode>
-  
-    </siteMapNode>
+          
+        <siteMapNode url="About.aspx" title="About"  description="Information about the application" >
+        </siteMapNode>
+
+      </siteMapNode>
                
 </siteMap>
 
