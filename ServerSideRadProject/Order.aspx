@@ -41,17 +41,16 @@
             </tr>
             <tr>
                 <td class="orderStyle2">
-        <asp:Label ID="lblShort" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="lblLong" runat="server" Text="Description"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="orderStyle2">
-        <asp:Label ID="lblLong" runat="server" Text="Label"></asp:Label>
-                </td>
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="orderStyle3" >
-        <asp:Label ID="lblPrice" runat="server" Text="Label"></asp:Label>
+        <asp:Label ID="lblPrice" runat="server" Text="Price"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -62,6 +61,14 @@
             </tr>
             <tr>
                 <td class="orderStyle2">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <table class="masterTable">
+            <tr>
+                <td>
         <asp:Button ID="btnAddToCart" runat="server" onclick="btnAddToCart_Click" 
             Text="Add to Cart" />
                 </td>

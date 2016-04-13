@@ -23,7 +23,7 @@
 
         <siteMapNode url="" title="Contact"  description="Contact Information" >
           <siteMapNode url="Contact.aspx" title="Contact Information"  description="Contact Information" />
-          <siteMapNode url="Suport.aspx" title="Customer Support FAQ"  description="Contact Information" />
+          <siteMapNode url="Support.aspx" title="Customer Support FAQ"  description="Contact Information" />
         </siteMapNode>
           
         <siteMapNode url="About.aspx" title="About"  description="Information about the application" >
