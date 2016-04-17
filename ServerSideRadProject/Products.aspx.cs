@@ -15,6 +15,7 @@ public partial class Products : System.Web.UI.Page
     {
         products = this.getProducts();
         pageCounter = 0;
+        Session["Counter"] = 0;
         this.populate();
     }
 
@@ -59,7 +60,21 @@ public partial class Products : System.Web.UI.Page
             }
             catch
             {
-                break;
+                Control myControl1 = FindControlRecursive(this, "ImageButton" + ((i - productNumber) + 1));
+                Image img = (Image)myControl1;
+                img.Visible = false;
+
+                myControl1 = FindControlRecursive(this, "Label" + (((i - productNumber) * 3) + 1));
+                Label lblBrandID = (Label)myControl1;
+                lblBrandID.Visible = false;
+
+                myControl1 = FindControlRecursive(this, "Label" + (((i - productNumber) * 3) + 2));
+                Label lblLong = (Label)myControl1;
+                lblLong.Visible = false;
+
+                myControl1 = FindControlRecursive(this, "Label" + (((i - productNumber) * 3) + 3));
+                Label lblPrice = (Label)myControl1;
+                lblPrice.Visible = false;
             }
         }
     }
@@ -114,7 +129,7 @@ public partial class Products : System.Web.UI.Page
     protected void Button2_Click(object sender, EventArgs e)
     {
         this.pageCounter = Convert.ToInt32(Session["Counter"]);
-            if ((this.pageCounter + 1) * 4 <= this.products.Count)
+            if ((this.pageCounter + 1) * 4 < this.products.Count)
         {
             this.pageCounter++;
             Session["Counter"] = this.pageCounter;
