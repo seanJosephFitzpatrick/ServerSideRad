@@ -15,7 +15,7 @@ public partial class Products : System.Web.UI.Page
     {
         products = this.getProducts();
         pageCounter = 0;
-        Session["Counter"] = 0;
+        ////Session["Counter"] = 0;
         this.populate();
     }
 
@@ -138,22 +138,26 @@ public partial class Products : System.Web.UI.Page
     }
     protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
+        this.pageCounter = Convert.ToInt32(Session["Counter"]);
         Session["Product"] = products[this.pageCounter * 4].ProductID;
         Response.Redirect("Order.aspx");
 
     }
     protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
     {
+        this.pageCounter = Convert.ToInt32(Session["Counter"]);
         Session["Product"] = products[(this.pageCounter * 4) + 1].ProductID;
         Response.Redirect("Order.aspx");
     }
     protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
     {
+        this.pageCounter = Convert.ToInt32(Session["Counter"]);
         Session["Product"] = products[(this.pageCounter * 4) + 2].ProductID;
         Response.Redirect("Order.aspx");
     }
     protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
     {
+        this.pageCounter = Convert.ToInt32(Session["Counter"]);
         Session["Product"] = products[(this.pageCounter * 4) + 3].ProductID;
         Response.Redirect("Order.aspx");
     }

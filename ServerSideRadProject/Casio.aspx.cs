@@ -15,7 +15,7 @@ public partial class Casio : System.Web.UI.Page
     {
         products = this.getProducts();
         pageCounter = 0;
-        Session["Counter"] = 0;
+        //Session["Counter"] = 0;
         this.populate();
     }
 
