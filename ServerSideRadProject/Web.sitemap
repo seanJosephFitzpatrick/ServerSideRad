@@ -3,7 +3,7 @@
       <siteMapNode url="Default.aspx" title="Home"  description="Staring page of the application">
        
         <siteMapNode url="" title="Shopping"  description="Page for selecting products" >
-          <siteMapNode url="Order.aspx" title="Products"  description="Page for selecting products" />
+          <siteMapNode url="Products.aspx" title="Products"  description="Page for selecting products" />
           <siteMapNode url="Cart.aspx" title="Cart"  description="Page for holding selected products" />
         </siteMapNode>
          

@@ -20,7 +20,13 @@ public partial class Order : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
-            ddlProducts.DataBind();
+        {
+           ddlProducts.DataBind();
+           if(Session["Product"] != null){
+               ddlProducts.SelectedValue = Session["Product"].ToString();
+           }
+           infoView.DataBind();
+        }
         selectedProduct = this.GetSelectedProduct();
         lblBrandID.Text = selectedProduct.BrandID;
         lblLong.Text = selectedProduct.LongDescription;
@@ -34,6 +40,7 @@ public partial class Order : System.Web.UI.Page
             SqlDataSource1.Select(DataSourceSelectArguments.Empty);
         productsTable.RowFilter = "ProductID = '" + ddlProducts.SelectedValue + "'";
         DataRowView row = (DataRowView)productsTable[0];
+
         Product p = new Product();
         p.ProductID = row["ProductID"].ToString();
         p.BrandID = row["BrandID"].ToString();
@@ -74,5 +81,9 @@ public partial class Order : System.Web.UI.Page
         return (SortedList)Session["Cart"];
     }
 
-    
+
+    protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+    {
+
+    }
 }
