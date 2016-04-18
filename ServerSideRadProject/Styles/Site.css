@@ -34,6 +34,7 @@ p
 }
 
 
+
 /* HEADINGS   
 ----------------------------------------------------------*/
 
@@ -339,4 +340,10 @@ div.accountInfo
 .masterTable
 {
     width: 100%;
+}
+
+
+ul#menu li 
+{
+    font-weight: 700;
 }
