@@ -12,7 +12,7 @@
         <asp:HyperLink ID="RegisterHyperLink" runat="server" EnableViewState="false">Register</asp:HyperLink> if you don't have an account.
     </p>
     <asp:Login ID="LoginUser" runat="server" EnableViewState="false" OnAuthenticate="AuthUser"
-     RenderOuterTable="false" OnLoggedIn="loggedIn">
+     RenderOuterTable="false">
         <LayoutTemplate>
             <span class="failureNotification">
                 <asp:Literal ID="FailureText" runat="server"></asp:Literal>

@@ -22,7 +22,7 @@
         </siteMapNode>
 
         <siteMapNode url="" title="Customer"  description="" >
-          <siteMapNode  title="Invoices" url="Invoice.aspx" description="Page for displaying your invoices" />
+          <siteMapNode  title="Invoices" url="InvoiceView.aspx" description="Page for displaying your invoices" />
           <siteMapNode  title="User details" url="UserDetails.aspx" description="Page for edit user details" />
         </siteMapNode>
 

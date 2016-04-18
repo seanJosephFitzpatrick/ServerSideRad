@@ -64,6 +64,7 @@ public partial class Order : System.Web.UI.Page
     private void AddToCart(CartItem item)
     {
         SortedList cart = this.GetCart();
+    
         string productID = selectedProduct.ProductID;
         if (cart.ContainsKey(productID))
         {
@@ -72,6 +73,8 @@ public partial class Order : System.Web.UI.Page
         }
         else
             cart.Add(productID, item);
+
+        Session["Cart"] = cart;
     }
 
     private SortedList GetCart()

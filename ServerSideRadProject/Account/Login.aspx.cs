@@ -13,16 +13,14 @@ public partial class Account_Login : System.Web.UI.Page
 
         RegisterHyperLink.NavigateUrl = "Register.aspx?ReturnUrl=" + HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
     }
-
+/*
     protected void loggedIn(object sender, EventArgs e)
     {
-        Session["Customer"] = CustomerDB.getCustomerByUserName(LoginUser.UserName);
+        Session["Customer"] = CustomerDB.getCustomerByUserName(LoginUser.UserName).Email;
     }
-
+    */
     protected void AuthUser(object sender, AuthenticateEventArgs e)
     {
-        Customer customer = new Customer();
-        customer.Email = LoginUser.UserName;
 
         bool Authenticated = false;
         Authenticated = AuthenticationMethod(LoginUser.UserName, LoginUser.Password);
@@ -40,6 +38,7 @@ public partial class Account_Login : System.Web.UI.Page
             return false;
         if (!customer.Password.Equals(password))
             return false;
+        Session["Customer"] = customer.Email;
         return true;
     }
 }

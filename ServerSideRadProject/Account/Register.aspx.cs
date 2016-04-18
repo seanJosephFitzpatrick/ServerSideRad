@@ -35,14 +35,15 @@ public partial class Account_Register : System.Web.UI.Page
 
     protected void RegisterUser_CreatedUser(object sender, EventArgs e)
     {
-        FormsAuthentication.SetAuthCookie(RegisterUser.UserName, false /* createPersistentCookie */);
+        //FormsAuthentication.SetAuthCookie(RegisterUser.UserName, false /* createPersistentCookie */);
+       // FormsAuthentication.
 
         Customer customer = new Customer();
         customer.UserName = RegisterUser.UserName;
         customer.Email = RegisterUser.Email;
         customer.Password = RegisterUser.Password;
         CustomerDB.Save(customer);
-        Session["Customer"] = customer;
+        Session["Customer"] = customer.Email;
         //customer.UserName = RegisterUser.UserName;
 
         string continueUrl = RegisterUser.ContinueDestinationPageUrl;
