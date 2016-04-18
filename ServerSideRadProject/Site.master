@@ -14,7 +14,7 @@
         <div class="header">
             <div class="title">
                 <h1>
-                    My ASP.NET Application
+                    Watch Shop
                 </h1>
             </div>
             <div class="loginDisplay">
@@ -24,7 +24,7 @@
                     </AnonymousTemplate>
                     <LoggedInTemplate>
                         Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
-                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" OnLoggingOut="loggingOut" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
                     </LoggedInTemplate>
                 </asp:LoginView>
             </div>

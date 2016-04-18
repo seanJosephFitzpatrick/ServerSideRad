@@ -11,5 +11,10 @@ public partial class SiteMaster : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void loggingOut(object sender, EventArgs e)
+    {
+        Session["Customer"] = null;
+    }
  
 }

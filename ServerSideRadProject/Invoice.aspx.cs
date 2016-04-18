@@ -9,6 +9,20 @@ public partial class Invoice : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-       // string teste = Session["Costumer"].ToString();
+        if (Session["Customer"] == null)
+        {
+            //go login
+             Response.Redirect("Account/Login.aspx");
+
+        }
+        else
+        {
+
+            string email = (Session["Customer"] as Customer).Email.ToString();
+            this.Label1.Text = email;
+            //SqlDataSource2.DataBind();
+            //DetailsView1.DataBind();
+           
+        }
     }
 }

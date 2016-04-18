@@ -6,7 +6,7 @@
     <table class="masterTable">
         <tr>
             <td>
-                <asp:Label ID="Label1" runat="server" Text="Greiner3@bymmatweb.com"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
             </td>
             <td>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:WatchesConnectionString2 %>" SelectCommand="SELECT * FROM [Invoices] WHERE ([CustEmail] = @CustEmail)">

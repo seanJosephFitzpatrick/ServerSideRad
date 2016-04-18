@@ -8,9 +8,16 @@ using System.Web;
 /// </summary>
 public class Customer
 {
+    public string Email;
     public string FirstName;
     public string LastName;
-    public string Email;
+    public string Address;
+    public string City;
+    public string CountryName;
+    public string PhoneNumber;
+    public string UserName;
+    public string Password;
+    
 
 	public Customer()
 	{
