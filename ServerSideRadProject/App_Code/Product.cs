@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -17,8 +17,23 @@ public class Product
 {
     public string ProductID;
     public string BrandID;
-    public string ShortDescription;
     public string LongDescription;
     public decimal UnitPrice;
+    public string Packaging;
+    public int Guarantee;
+    public decimal CaseWidth;
+    public decimal CaseDepth;
+    public string CategoryID;
+    public string DialColor;
+    public string CaseMaterial;
+    public string StrapType;
+    public string StrapColor;
+    public int WaterResistancy;
+    public string DateDisplay;
+    public string ClaspType;
+    public string Movement;
+    public string Chronograph;
+    public string AnalogueDigital;
     public string ImageFile;
+
 }

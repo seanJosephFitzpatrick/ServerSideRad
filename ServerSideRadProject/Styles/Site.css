@@ -34,6 +34,7 @@ p
 }
 
 
+
 /* HEADINGS   
 ----------------------------------------------------------*/
 
@@ -88,10 +89,10 @@ first child of the left and right table columns */
 
 .page
 {
-    width: 960px;
+    width: auto;
     background-color: #fff;
-    margin: 20px auto 0px auto;
     border: 1px solid #496077;
+    min-height:1000px;
 }
 
 .header
@@ -99,7 +100,7 @@ first child of the left and right table columns */
     position: relative;
     margin: 0px;
     padding: 0px;
-    background: #4b6c9e;
+    background: black;
     width: 100%;
 }
 
@@ -339,4 +340,10 @@ div.accountInfo
 .masterTable
 {
     width: 100%;
+}
+
+
+ul#menu li 
+{
+    font-weight: 700;
 }

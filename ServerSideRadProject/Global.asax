@@ -22,6 +22,7 @@
 
     void Session_Start(object sender, EventArgs e) 
     {
+        //Session["Customer"] = 
         // Code that runs when a new session is started
 
     }

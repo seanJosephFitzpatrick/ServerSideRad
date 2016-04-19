@@ -3,7 +3,7 @@
       <siteMapNode url="Default.aspx" title="Home"  description="Staring page of the application">
        
         <siteMapNode url="" title="Shopping"  description="Page for selecting products" >
-          <siteMapNode url="Order.aspx" title="Products"  description="Page for selecting products" />
+          <siteMapNode url="Products.aspx" title="Products"  description="Page for selecting products" />
           <siteMapNode url="Cart.aspx" title="Cart"  description="Page for holding selected products" />
         </siteMapNode>
          
@@ -15,10 +15,15 @@
           <siteMapNode url="Rolex.aspx" title="Rolex"  description="Page for displaying Rolex watches" />
         </siteMapNode>
 
-        <siteMapNode url="" title="Catagory"  description="Page for displaying different Catagories of watches" >
+        <siteMapNode url="" title="Category"  description="Page for displaying different Catagories of watches" >
           <siteMapNode url="Male.aspx" title="Male"  description="Page for displaying Male only watches" />
             <siteMapNode url="Female.aspx" title="Female"  description="Page for displaying Female only watches" />
           <siteMapNode url="Sport.aspx" title="Sport"  description="Page for displaying Sports watches" />
+        </siteMapNode>
+
+        <siteMapNode url="" title="Customer"  description="" >
+          <siteMapNode  title="Invoices" url="InvoiceView.aspx" description="Page for displaying your invoices" />
+          <siteMapNode  title="User details" url="UserDetails.aspx" description="Page for edit user details" />
         </siteMapNode>
 
         <siteMapNode url="" title="Contact"  description="Contact Information" >

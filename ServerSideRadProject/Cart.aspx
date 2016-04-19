@@ -35,7 +35,7 @@
             <tr>
                 <td class="cartStyle3">
                     <asp:Button ID="btnContinue" runat="server" Text="Continue Shopping" 
-                        PostBackUrl="~/Order.aspx" />
+                        PostBackUrl="~/Products.aspx" style="text-align: left" />
                 </td>
                 <td class="cartStyle2">
                     <asp:Button ID="btnCheckOut" runat="server" onclick="btnCheckOut_Click" 
