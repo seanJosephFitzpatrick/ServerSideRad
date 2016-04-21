@@ -48,6 +48,12 @@ public partial class CheckOut : System.Web.UI.Page
 
         invoice.CustEmail = Session["Customer"].ToString();
         invoice.OrderDate = DateTime.Now;
+        invoice.CreditCardType = ddlCreditCard.SelectedValue;
+        invoice.CardNumber = txtCardNumber.Text;
+        invoice.ExpirationMonth = Int32.Parse(ddlMonth.SelectedValue);
+        invoice.ExpirationYear = Int32.Parse(ddlYear.SelectedValue);
+        
+
         //************ PUT HERE payment info ***********
 
 
@@ -63,6 +69,7 @@ public partial class CheckOut : System.Web.UI.Page
             li.ProductID = ci.Product.ProductID;
             li.Quantity = ci.Quantity;
             li.UnitPrice = (double)ci.Product.UnitPrice;
+            
             totalPrice += (li.UnitPrice * li.Quantity);
             LineItemDB.Save(li);
         }
