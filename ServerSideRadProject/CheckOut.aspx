@@ -20,6 +20,10 @@
         width: 785px;
         height: 21px;
     }
+    .style4
+    {
+        text-decoration: underline;
+    }
 </style>
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
@@ -35,7 +39,7 @@
             </tr>
             <tr>
                 <td class="checkOutStyle2">
-                    First Name</td>
+                    <span class="style4">F</span>irst Name</td>
                 <td class="checkOutStyle3">
                     <asp:TextBox ID="txtFirstName" runat="server" AccessKey="F"></asp:TextBox>
                 </td>
@@ -47,9 +51,9 @@
             </tr>
             <tr>
                 <td class="checkOutStyle2">
-                    Last Name</td>
+                    <span class="style4">L</span>ast Name</td>
                 <td class="checkOutStyle3">
-                    <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLastName" runat="server" AccessKey="L"></asp:TextBox>
                 </td>
                 <td class="checkOutStyle4">
                     <asp:RequiredFieldValidator ID="LastnameRequiredFieldValidator2" runat="server" 
@@ -163,7 +167,8 @@
                 <td class="checkOutStyle2">
                     Credit Card:</td>
                 <td class="checkOutStyle3">
-                    <asp:DropDownList ID="ddlCreditCard" runat="server">
+                    <asp:DropDownList ID="ddlCreditCard" runat="server" 
+                        DataValueField="Select Card">
                         <asp:ListItem>Visa</asp:ListItem>
                         <asp:ListItem>Master Card</asp:ListItem>
                         <asp:ListItem>American Express</asp:ListItem>
