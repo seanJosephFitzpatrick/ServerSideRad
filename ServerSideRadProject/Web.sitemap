@@ -10,9 +10,6 @@
         <siteMapNode url="" title="Brands"  description="Page for displaying different brands" >
           <siteMapNode url="Armani.aspx" title="Armani"  description="Page for displaying Armani watches" />
             <siteMapNode url="Casio.aspx" title="Casio"  description="Page for displaying Casio watches" />
-              <siteMapNode url="Citizen.aspx" title="Citizen"  description="Page for displaying Citizen watches" />
-            <siteMapNode url="Diesel.aspx" title="Diesel"  description="Page for displaying Diesel watches" />
-          <siteMapNode url="Rolex.aspx" title="Rolex"  description="Page for displaying Rolex watches" />
         </siteMapNode>
 
         <siteMapNode url="" title="Category"  description="Page for displaying different Catagories of watches" >

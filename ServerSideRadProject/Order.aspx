@@ -8,8 +8,6 @@
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <div>
     
-        <asp:Image ID="Image1" runat="server" Height="70px" 
-            ImageUrl="~/Images/MurachLogo.jpg" Width="491px" />
         <br />
         <table class="orderStyle1">
             <tr>
