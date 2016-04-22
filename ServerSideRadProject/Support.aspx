@@ -179,7 +179,10 @@
                                 <asp:DataPager ID="DataPager1" runat="server">
                                     <Fields>
                                         <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" 
-                                            ShowLastPageButton="True" />
+                                            ShowNextPageButton="False" ShowPreviousPageButton="False" />
+                                        <asp:NumericPagerField />
+                                        <asp:NextPreviousPagerField ButtonType="Button" ShowLastPageButton="True" 
+                                            ShowNextPageButton="False" ShowPreviousPageButton="False" />
                                     </Fields>
                                 </asp:DataPager>
                             </td>
@@ -217,7 +220,7 @@
     <br />
 
     <p><b>
-    <a id="receive">I just placed an order online, when can I expect to receive my watch?????????????????????????eive my watch?</a>
+    <a id="receive">I just placed an order online, when can I expect to receive my watch?</a>
     </b></p>
 
     <p>
