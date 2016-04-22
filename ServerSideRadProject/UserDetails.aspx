@@ -17,7 +17,8 @@
                         <asp:BoundField DataField="PhoneNumber" HeaderText="PhoneNumber" SortExpression="PhoneNumber" />
                         <asp:BoundField DataField="UserName" HeaderText="UserName" SortExpression="UserName" />
                         <asp:BoundField DataField="Password" HeaderText="Password" SortExpression="Password" />
-                        <asp:CommandField ShowEditButton="True" />
+                        <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" 
+                            ShowInsertButton="True" />
                     </Fields>
                 </asp:DetailsView>
             </td>
