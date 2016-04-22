@@ -1,6 +1,12 @@
 ﻿/* DEFAULTS
 ----------------------------------------------------------*/
 
+picture_watch
+{
+    max-height:200px;
+    max-width:150px;
+}
+
 body   
 {
     background: #b6b7bc;

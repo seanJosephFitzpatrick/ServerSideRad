@@ -18,7 +18,9 @@
         </tr>
         <tr>
             <td>
-                <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" DataKeyNames="InvoiceNumber" DataSourceID="SqlDataSource2" Height="50px" Width="499px">
+                <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" 
+                    DataKeyNames="InvoiceNumber" DataSourceID="SqlDataSource2" Height="50px" 
+                    Width="499px" AutoGenerateRows="False">
                     <Fields>
                         <asp:BoundField DataField="InvoiceNumber" HeaderText="InvoiceNumber" InsertVisible="False" ReadOnly="True" SortExpression="InvoiceNumber" />
                         <asp:BoundField DataField="CustEmail" HeaderText="CustEmail" SortExpression="CustEmail" />
